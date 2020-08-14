@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(int argc, char *argv[]) 
+{
+	setlocale(LC_ALL, "Portuguese");
+	int n;
+		printf("Digite um numero de 0 a 20 para ver se é ou não maior que 10: \n");
+		scanf("%d", &n);
+		system("cls");
+			printf("O valor informado foi %i \n", n);
+	if (n <= 20)
+	{
+		if (n == 10)
+		{
+			printf("O numero informado é IGUAL a 10.");
+		}
+		else
+			if(n < 10)
+			{
+				printf("O numero é MENOR que 10.");
+			}	
+			else
+			{
+				printf("O numero é MAIOR de 10.");
+			}
+	}
+	else
+	{
+		printf("Número invalido.");
+	}
+	return 0;
+}
